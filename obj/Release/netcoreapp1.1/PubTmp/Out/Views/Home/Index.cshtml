@@ -1,0 +1,161 @@
+﻿@model AddressSearch.Models.Address
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    <div id="addressSearch" class="">
+        <div id="searchRequest">
+            <table>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.street)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.street)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.city)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.city)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.state)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.state)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.zipCode)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.zipCode)
+                        </div>
+                    </td>
+                </tr>
+            </table>            
+            <input type="submit" name="submit" value="search" />
+        </div>
+        <div id="searchResults">
+            <h1>Results</h1>
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div>@Html.ValidationMessage("Error")</div>
+            }
+            else
+            {
+                @if (Model.street != null)
+                {
+                <table style="width:600px;">
+                    <tr>
+                        <td valign="top">
+                            <div id="address">
+                                <h3>Address</h3>
+                                <table>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.street) @Html.DisplayFor(model => model.street)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.city) @Html.DisplayFor(model => model.city)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.state) @Html.DisplayFor(model => model.state)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.zipCode) @Html.DisplayFor(model => model.zipCode)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.latitude) @Html.DisplayFor(model => model.latitude)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.longitude) @Html.DisplayFor(model => model.longitude)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td valign="top">
+                            <div id="zestimate">
+                                <h3>Z Estimate</h3>
+                                <table>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.amount)  @Model.amount.ToString("C")</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.valueChange) @Model.valueChange.ToString("C")</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.low) @Model.low.ToString("C")</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.high) @Model.high.ToString("C")</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <div id="links">
+                                <h3>Links</h3>
+                                <table>
+                                    <tr>
+                                        <td><a href="@Model.homeDetails">Home Details</a></td>                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a href="@Model.graphsAndData">Graphs and Data</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="@Model.mapThisHome">Map</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="@Model.comparables">Comparables</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td valign="top">
+                            <div id="localRealEstate">
+                                <h3>Local Real Estate</h3>
+                                <table>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.regionName) @Html.DisplayFor(model => model.regionName)</td>                                        
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.regionType) @Html.DisplayFor(model => model.regionType)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.LabelFor(model => model.zindexValue) @Model.zindexValue.ToString("C")</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="@Model.forSaleByOwner">For Sale By Owner</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="@Model.forSale">For Sale</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                }
+            }
+        </div>
+    </div>
+}
+
