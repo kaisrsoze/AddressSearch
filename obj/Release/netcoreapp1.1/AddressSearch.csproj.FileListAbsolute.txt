@@ -3,7 +3,7 @@ C:\AddressSearch\AddressSearch\bin\Release\netcoreapp1.1\AddressSearch.runtimeco
 C:\AddressSearch\AddressSearch\bin\Release\netcoreapp1.1\AddressSearch.runtimeconfig.dev.json
 C:\AddressSearch\AddressSearch\bin\Release\netcoreapp1.1\AddressSearch.dll
 C:\AddressSearch\AddressSearch\bin\Release\netcoreapp1.1\AddressSearch.pdb
-C:\AddressSearch\AddressSearch\obj\Release\netcoreapp1.1\AddressSearch.csprojResolveAssemblyReference.cache
 C:\AddressSearch\AddressSearch\obj\Release\netcoreapp1.1\AddressSearch.AssemblyInfo.cs
 C:\AddressSearch\AddressSearch\obj\Release\netcoreapp1.1\AddressSearch.dll
 C:\AddressSearch\AddressSearch\obj\Release\netcoreapp1.1\AddressSearch.pdb
+C:\AddressSearch\AddressSearch\obj\Release\netcoreapp1.1\AddressSearch.csprojResolveAssemblyReference.cache
