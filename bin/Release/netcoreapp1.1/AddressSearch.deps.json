@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "19b19014fa3731af1ad4d74b3d1cab74067eac58"
+    "signature": "c3ea8f38b8dde10aa6d8647e30aa0b7d9c026f56"
   },
   "compilationOptions": {
     "defines": [
@@ -32,7 +32,8 @@
           "Microsoft.Extensions.Logging.Debug": "1.1.2",
           "Microsoft.NETCore.App": "1.1.2",
           "Microsoft.VisualStudio.Web.BrowserLink": "1.1.2",
-          "System.Net.Http": "4.3.2"
+          "System.Net.Http": "4.3.2",
+          "jQuery": "3.1.1"
         },
         "runtime": {
           "AddressSearch.dll": {}
@@ -41,6 +42,7 @@
           "AddressSearch.dll": {}
         }
       },
+      "jquery/3.1.1": {},
       "microsoft.applicationinsights/2.2.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -3101,6 +3103,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "jquery/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XGsgwse025NxNPHjY7GE8HMFNzjqsa7a/PmNS1S5bVU++pNpZmiTnzUBK6OmECnqG/fIMVaAYHTnfoYd/Wz28g==",
+      "path": "jquery/3.1.1",
+      "hashPath": "jquery.3.1.1.nupkg.sha512"
     },
     "microsoft.applicationinsights/2.2.0": {
       "type": "package",
