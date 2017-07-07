@@ -5,6 +5,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+    <EnableMSDeployAppOffline>true</EnableMSDeployAppOffline>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcTC29qQMEke6XQKO0DcapwAAAAACAAAAAAADZgAAwAAAABAAAAAfnAgPc0f+tMJxLo8+TizXAAAAAASAAACgAAAAEAAAAF+YW5HUv0XHXM03jV7m5Z+AAAAA5E6oQCE7HjLLVJnJ5Fahn8ZiHSgmjfPBcpQjWg7HPNBvej5Fi4BiCOShOa1B4lpxXdM88g3jAimJ61mY3ohh9ny80/RSu/eFqcF5dw1qJtXX3zvct+hsnErBl76rsTJeKfEAiZ8pCvYgu+AgMhcptOLONmdTd4AEMHms+B1e7CUUAAAAxh5mQA/EplXa4daVNQ/I9Jt5DJk=</EncryptedPassword>
     <_NewBackgroundProfile>False</_NewBackgroundProfile>
